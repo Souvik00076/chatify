@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .common-button {
+    @apply bg-primary-purple text-white rounded-md py-2;
+  }
+  .h1 {
+    @apply text-4xl;
+  }
+  .h3 {
+    @apply text-lg;
+  }
+  .common-input {
+    @apply outline-none py-2 px-1 border-2 rounded-md border-primary-gray;
+  }
+  .app-bg-container {
+    @apply bg-app_container bg-cover bg-no-repeat;
+  }
+  .desktop-bg-container {
+    @apply bg-desktop_container bg-cover bg-no-repeat;
+  }
+}
+.hide-scrollbar {
+  overflow: scroll; /* Allows scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+/* WebKit-based browsers (Chrome, Brave, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hides scrollbar */
+}
